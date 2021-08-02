@@ -153,3 +153,235 @@ html, body {
     margin-right: 10px;
     color: var(--gray2);
 }
+
+.ingredients {
+    grid-area: ingredients;
+}
+
+
+.ingredients-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--gray1);
+    margin-bottom: 15px;
+}
+
+.ingredients-subtitle {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--gray1);
+    margin-bottom: 20px;
+}
+
+.ingredients-poster {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.checkbox-ingredient {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--gray1);
+}
+
+.text-style-cursive {
+    font-style: italic;
+}
+
+.text-style-normal {
+    font-style: normal;
+}
+
+.ingredients-subtitle-2 {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--gray1);
+    margin-bottom: 20px;
+}
+
+.instructions {
+    grid-area: instructions;
+    margin-bottom: 30px;
+}
+
+.instructions-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--gray1);
+    margin-bottom: 25px;
+}
+
+.instructions-poster {
+    list-style: none;
+}
+
+.instructions-post {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.instructions-numbers {
+    width: 40px;
+    height: 40px;
+    background: var(--orange);
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 20px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.instructions-guia-preparation {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--black);
+    line-height: 150%;
+}
+
+.text-color-black {
+    font-weight: 800;
+    color: var(--gray1);
+}
+
+.footer {
+    grid-area: footer;
+    margin-bottom: 20px;
+}
+
+.footer-autor {
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+@media screen and (min-width: 1024px){
+    .container {
+        width: 70%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "title         title"
+                             "ingredients   cooking"
+                             "instructions  instructions"
+                             "footer        footer";
+    }
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .title-primary {
+        font-size: 44px;
+        margin-bottom: 30px;
+    }
+
+    .title-data {
+        width: 65%;
+        margin-bottom: 40px;
+    }
+
+    .title-subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .title-figure {
+        width: 100%;
+    }
+
+    .ingredients-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .ingredients-subtitle {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .cooking-instruction {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "child-1"
+                             "child-2"
+                             "child-3"
+                             "child-4";
+    }
+
+    .cooking-preparations:nth-child(1) {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        grid-area: child-1;
+    }
+
+    .cooking-preparations:nth-child(2) {
+        grid-area: child-2;
+    }
+
+    .cooking-preparations:nth-child(3) {
+        grid-area: child-3;
+    }
+
+    .cooking-preparations:nth-child(4) {
+        grid-area: child-4;
+    }
+
+    .cooking-instruction {
+        width: 220px;
+        margin: 0 auto;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+    }
+
+    .cooking-preparations {
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    .fas {
+        margin: 10px;
+    }
+
+    .far {
+        margin: 10px;
+    }
+
+    .cooking-data {
+        align-self: center;
+        width: 60px;
+    }
+
+    .instructions {
+        width: 50%;
+    }
+
+    .instructions-guia-preparation {
+        font-size: 16px;
+    }
